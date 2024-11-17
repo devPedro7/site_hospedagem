@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+}
+
+h1, h2, h3{
+    color: #333;
+}
+
+p{
+    color: #70747a;
+}
+
+/*NAV*/
+
+.navbar-container{
+    width: 100%;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: #232a31;
+}
+
+nav{
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+    margin-top: 15px;
+}
+
+
+.navbar-items{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li{
+    display: inline-block;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+.navbar-items a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar-items a:hover{
+    color: #ccc;
+}
+
+.default-btn{
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 7px;
+}
+
+.navbar-items .default-btn:hover{
+    background-color: #22bb5f;
+    color: #fff;
+}
+
+/*MAIN*/
+
+.main-banner{
+    background-image: url(../assets/mainbanner.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1, .main-banner p{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1{
+    font-size: 54px;
+}
+
+.main-banner p{
+    font-size: 32px
+}
+
+/*SERVICOS*/
+.services-container{
+    padding: 5rem 0;
+}
+
+.services-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li{
+    padding: 20px;
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+}
+
+.fas{
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.fa-shield-alt{
+    color: #2cc76a;
+}
+
+.fa-rocket{
+    color: #ef3f29;
+}
+
+.fa-comments{
+    color: #ef8f29;
+}
+
+.services-container h3{
+    margin-bottom: 25px;
+}
+
+.services-container p{
+    line-height: 24px
+}
+
+/*PRICES - PLANS*/
+.pricing-container{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing-container h2{
+    font-size: 36px;
+}
+
+.pricing-container p{
+    font-size: 20px;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan{
+    margin: 0 20px;
+    max-width: 275px;
+    flex: 1;
+}
+
+.plan ul{
+    padding: 0;
+}
+
+.plan li{
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto -50px;
+    border-radius: 50%;
+    background-color: #2dc762;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan-name{
+    padding: 50px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b24;
+}
+
+.plan .plan-btn{
+    height: 75px;
+    font-size: 24px;
+    line-height: 75px;
+    background-color: #2cc762;
+    color: #fff;
+    cursor: pointer;
+}
+
+.plan .recommended{
+    background-color: #f45c57;
+}
+
+/*SEARCH DOMAIN*/
+.searchdomain-container{
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #34454e;
+}
+
+.searchdomain-container h2{
+    margin-bottom: 15px;
+    font-size: 42px;
+    color: #fff;
+}
+
+.searchdomain-container p{
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #d5d5d5;
+}
+
+.searchdomain-container input{
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 7px;
+}
+
+.searchdomain-container input[type="text"]{
+    width: 60%;
+    margin-bottom: 25px;
+    padding: 20px;
+    font-size: 20px
+}
+
+.searchdomain-container input[type="submit"]{
+    padding: 15px 30px;
+    background-color: #2cc76a;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.searchdomain-container input[type="submit"]:hover{
+    opacity: 1;
+}
+
+
+/*CONTACT-FORM*/
+.contact-container{
+    padding: 5rem 0 2rem 0;
+    text-align: center;
+}
+
+.contact-container h2{
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.contact-container p{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.contact-container input, textarea{
+    width: 200px;
+    margin: 0 10px 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-container textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.contact-container input[type="submit"]:hover{
+    opacity: 1;
+}
+
+/*FOOTER*/
+footer{
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px 0 100px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #34454e;
+}
+
+footer p{
+    color: #fff;
+}
+
+/*RESPOSNIVIDADE*/
+/*LAPTOPS PEQUENOS*/
+@media(max-width: 1100px){
+    .plans-container{
+        width: 95%;
+    }
+
+    .plan{
+        margin: 0 5px;
+    }
+}
+
+/*TABLET*/
+@media(max-width:900px){
+    .main-banner p{
+        padding: 0 6rem;
+    }
+
+    .searchdomain-container{
+        padding: 2rem 4rem;
+    }
+}
+
+/*TABLET*/
+@media(max-width:576px){
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .main-banner p{
+        padding: 0 2rem;
+    }
+
+    .navbar-items{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .services-container ul{
+        flex-direction: column;
+    }
+
+    .plans-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+    .plan{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .searchdomain-container h2{
+        font-size: 28px;
+    }
+
+    .searchdomain-container input[type="text"]{
+        width: 100%;
+    }
+
+    .contact-container{
+        padding: 3rem 2rem;
+    }
+
+    .contact-container input, textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
